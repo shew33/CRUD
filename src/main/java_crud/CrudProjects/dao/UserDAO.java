@@ -20,7 +20,6 @@ public class UserDAO implements UserDAOInterface {
     @Override
     public void saveUser(User user) {
         entityManager.persist(user);
-
     }
 
     @Override

@@ -30,14 +30,12 @@ public class UserService implements UserServiceInterface {
     @Override
     public void saveUser(User user) {
         userDAO.saveUser(user);
-
     }
 
     @Transactional
     @Override
     public void updateUser(long id, User updatedUser) {
         userDAO.updateUser(id, updatedUser);
-
     }
 
     @Transactional
